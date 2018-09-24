@@ -101,10 +101,12 @@ body
 .features .feat h2
 {
     text-transform: capitalize;
+    color:#555
 }
 .features .feat p
 {
     line-height: 1.3;
+    color:#555
 }
 /****************end features*******************/
 /* start about me */
@@ -267,7 +269,7 @@ body
 .education .exp
 {
     float:left;
-    width:49%;
+    width:50%;
 }
 .education .edu h2{color:#555}
 .education .edu > p
@@ -283,60 +285,109 @@ body
 .education  .exp
 {
     margin: 50px auto 0 0;
-    border:1px solid green
+    
 }
 .education  .exp .diploma h3
 {
     color:#555;
     margin-bottom:0;
 }
-.education  .exp .diploma p{color:#555;margin-top:8px}
-.education  .exp .diploma .gpa span
+.education  .exp .diploma > p{color:#555;margin-top:8px}
+.education  .exp .diploma .gpa > span
 {
-    display:block;
-    width:100px;
-    height: 30px;
+    display:inline-block;
+    padding: 5px 10px;
+    
     background-color:#5eca98;
     color:#fff;
-    line-height: 30px;
-    text-align: center
+    margin-bottom: 20px;
+}
+.education  .exp .diploma .gpa > p:last-of-type
+{
+    margin-top:20px;
+    padding: 0 10px 0 0;
+}
+.education hr
+{
+    opacity: 0.3;
 }
 /* end education */
 /* start testimolians */
 .testimolians
 {
-    padding: 30px 0;
+    padding: 50px 0 30px 0 ;
     background-color: #f2f2f2;
     text-align: center;
 }
+.testimolians q
+{
+    line-height: 1.4;
+    color:#555;
+    font-size:18px;
+    font-style:italic;
+}
+.testimolians h3
+{
+    color:#555;
+    margin-bottom: 10px;
+}
+.testimolians ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    display:inline-block;
+    margin: 0;
+}
+.testimolians ul li
+{
+    width:10px;
+    height: 10px;
+    border:1px solid green;
+    float:left;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+.testimolians ul li.active,
+.testimolians ul li:hover{
+    background-color:#5eca98; 
+}
+
 /* end testimolians */
 /* start portfolio */
 .portfolio
 {
-    padding:30px 0;
+    padding:50px 0;
    
 }
 .portfolio .main
 {
     text-align: center;
 }
+.portfolio .main h2{color:#555}
+.portfolio .main p{color:#555;line-height: 1.4;width:80%;margin:30px auto 20px}
 .portfolio .our-work{overflow: hidden}
 .portfolio .our-work > div
 {
     float:left;
-    width:31.3333%;
-    margin:5px 1%;
+    width:29.3333%;
+    margin:5px 2%;
 }
 .portfolio .our-work > div img
 {
-    width:100%;
+    width:95%;
+    border:1px solid #ccc;
+    padding: 3px;
+    background-color: #fff;
+    
 }
 /* end portfolio */
 /* start contact*/
 .contact-me
 {
     overflow:hidden;
-    padding:30px 0;
+    padding:50px 0;
     background-color: #252f31;
     
 }
@@ -344,11 +395,61 @@ body
 {
     color:#fff
 }
-.contact-me .info,
-.contact-me .form
+.contact-me .info p
+{
+    color:#777;
+    line-height:1.4;
+}
+.contact-me .info p strong
+{
+    color:#ccc
+}
+.contact-me .info
 {
     width:50%;
     float:left;
+}
+
+.contact-me .form
+{
+    width:45%;
+    float:left;
+    margin-left:5%;
+    margin-top:50px;
+}
+.contact-me .form label
+{
+    display:block;
+    color:#ccc;
+    margin-bottom: 10px;
+}
+.contact-me .form input[type="text"]
+{
+    width:80%;
+    height: 30px;
+    background-color: #555;
+    border:none;
+    color:#fff;
+    margin-bottom: 20px;
+    font-size:18px;
+}
+.contact-me .form textarea
+{
+    background-color: #555;
+    border:none;
+    color:#fff;
+    width:80%;
+    height: 300px;
+    margin-bottom: 20px;
+    font-size:18px;
+    display:block
+}
+.contact-me .form input[type="submit"]
+{
+    background-color:#555a59;
+    border:none;
+    padding: 10px 30px;
+    color:#ccc;
 }
 /* end contact */
 /*start footer*/
@@ -356,9 +457,19 @@ body
 {
     background-color: #555a59;
     text-align: center;
-    padding:30px 0;
+    padding:50px 0;
+}
+.footer p
+{
+    color:#CCC
 }
 
+.footer p+div a
+{
+    text-decoration: none;
+    color:#fff;
+    font-size:25px;
+}
 /*end footer */
 
 
